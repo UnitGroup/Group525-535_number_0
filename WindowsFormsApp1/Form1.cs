@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
     {
         
         
-        double a;
+        double a;//переменная
         int znach, b=0;
         bool znak = true;
         string tex_1="";
