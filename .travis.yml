@@ -1,9 +1,11 @@
 language: csharp
 solution: TP2_laba_8.sln
+dist: trusty
+sudo: false
 install:
-- chmod a+x "$TRAVIS_MSBUILD_BIN"/msbuild-prepare
-- msbuild-prepare
-- sudo apt-get install g++ cmake
+#- chmod a+x "$TRAVIS_MSBUILD_BIN"/msbuild-prepare
+#- msbuild-prepare
+#- sudo apt-get install g++ cmake
 - nuget restore 'TP2_laba_8.sln'
 - nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
 script:
