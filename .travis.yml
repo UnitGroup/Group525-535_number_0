@@ -5,4 +5,4 @@ install:
 - nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
 script:
 - xbuild /p:Configuration=Release Laba_TP_1_1.sln
-- mono ./testrunner/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ./ClassOperTests1/bin/Release/ClassOperTests1.dll
+- mono ./testrunner/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ./CalculTests/bin/Release/CalculTests.dll
