@@ -1,8 +1,8 @@
 language: csharp
-solution: TP_lb3_Mass.sln
+solution: TP2_laba_8.sln
 install:
-- nuget restore 'TP_lb3_Mass.sln'
+- nuget restore 'TP2_laba_8.sln'
 - nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
 script:
-- xbuild /p:Configuration=Release TP_lb3_Mass.sln
-- mono ./testrunner/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ./ClassOperTests1/bin/Release/ClassOperTests1.dll
+- xbuild /p:Configuration=Release TP2_laba_8.sln
+- mono ./testrunner/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ./CalcuTests1/bin/Release/CalcuTests1.dll
